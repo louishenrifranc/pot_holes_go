@@ -4,10 +4,16 @@ import android.content.IntentSender;
 import android.location.Location;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
+import com.firebase.geofire.GeoFire;
+import com.firebase.geofire.GeoLocation;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.PendingResult;
@@ -22,14 +28,24 @@ import com.google.android.gms.location.LocationSettingsStatusCodes;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.GoogleMapOptions;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.io.Console;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
     private GoogleMap mMap;
     private GoogleApiClient mGoogleApiClient;
+    private GoogleMapOptions mGoogleMapOptions;
+    private Button mReportButton;
+    private DatabaseReference ref;
+    private GeoFire geoFire;
     Location mLastLocation;
 
     @Override
@@ -37,10 +53,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+        final SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+        mGoogleMapOptions = new GoogleMapOptions();
+        mGoogleMapOptions.mapType(GoogleMap.MAP_TYPE_HYBRID)
+                .compassEnabled(false)
+                .rotateGesturesEnabled(false)
+                .tiltGesturesEnabled(false);
 
+        mReportButton = (Button) findViewById(R.id.button);
         if (mGoogleApiClient == null) {
             mGoogleApiClient = new GoogleApiClient.Builder(this)
                     .addConnectionCallbacks(this)
@@ -48,6 +70,34 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     .addApi(LocationServices.API)
                     .build();
         }
+
+        mReportButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                LatLng currentPosition = mMap.getCameraPosition().target;
+                String key = Long.toString((long) currentPosition.latitude) + "," + Long.toString((long) currentPosition.longitude);
+                geoFire.setLocation(key, new GeoLocation(currentPosition.latitude, currentPosition.longitude), new GeoFire.CompletionListener() {
+
+                    @Override
+                    public void onComplete(String key, DatabaseError error) {
+                        if (error == null) {
+                            Snackbar
+                                    .make(findViewById(R.id.map), "You are the " +
+                                            "best, thank you for making Montreal an even better place", Snackbar.LENGTH_LONG).show();
+                        } else {
+                            Log.d("aa", error.toString());
+                            Snackbar
+                                    .make(findViewById(R.id.map), "Couldn't upload the information, but you are still the best", Snackbar.LENGTH_LONG).show();
+
+                        }
+                    }
+                });
+            }
+        });
+
+        ref = FirebaseDatabase.getInstance().getReference("locations/");
+        geoFire = new GeoFire(ref);
     }
 
     @Override
@@ -79,7 +129,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng sydney = new LatLng(-34, 151);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-        mMap.animateCamera(CameraUpdateFactory.zoomIn());
     }
 
     @Override
@@ -89,10 +138,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         if (mLastLocation != null) {
             LatLng newPosition = new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude());
             mMap.clear();
-            mMap.moveCamera(CameraUpdateFactory.newLatLng(newPosition));
+            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(newPosition, 30.0f));
         }
-
     }
+
 
     @Override
     public void onConnectionSuspended(int i) {

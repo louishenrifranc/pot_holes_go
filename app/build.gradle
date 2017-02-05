@@ -34,7 +34,7 @@ dependencies {
     compile 'com.google.firebase:firebase-database:9.6.0'
     // FirebaseUI
     compile 'com.firebaseui:firebase-ui-auth:0.6.0'
-
+    compile 'com.firebase:geofire-android:2.1.1'
     testCompile 'junit:junit:4.12'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
     testCompile 'junit:junit:4.12'

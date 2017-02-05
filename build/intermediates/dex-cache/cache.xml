@@ -75,6 +75,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.firebase/geofire-android/2.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0255d2343d1370f39024fb111568a705b2eb49cd">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.firebase-geofire-android-2.1.1_7f25920d9c9499d47fbfd0815381485591639e77/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.6.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
