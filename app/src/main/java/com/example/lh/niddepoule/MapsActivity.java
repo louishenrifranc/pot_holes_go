@@ -2,6 +2,7 @@ package com.example.lh.niddepoule;
 
 import android.content.IntentSender;
 import android.location.Location;
+import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
@@ -11,9 +12,12 @@ import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
 
 import com.firebase.geofire.GeoFire;
 import com.firebase.geofire.GeoLocation;
+import com.firebase.geofire.GeoQuery;
+import com.firebase.geofire.GeoQueryEventListener;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.PendingResult;
@@ -40,10 +44,15 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.io.Console;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
+    private static final double RADIUS_SEARCH_QUERY = 1.2;
+
     private GoogleMap mMap;
     private GoogleApiClient mGoogleApiClient;
     private GoogleMapOptions mGoogleMapOptions;
+
     private Button mReportButton;
+    private RadioButton mRadioButton;
+
     private DatabaseReference ref;
     private GeoFire geoFire;
     Location mLastLocation;
@@ -63,6 +72,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .tiltGesturesEnabled(false);
 
         mReportButton = (Button) findViewById(R.id.button);
+        mRadioButton = (RadioButton) findViewById(R.id.radioButton);
+
         if (mGoogleApiClient == null) {
             mGoogleApiClient = new GoogleApiClient.Builder(this)
                     .addConnectionCallbacks(this)
@@ -86,7 +97,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                     .make(findViewById(R.id.map), "You are the " +
                                             "best, thank you for making Montreal an even better place", Snackbar.LENGTH_LONG).show();
                         } else {
-                            Log.d("aa", error.toString());
                             Snackbar
                                     .make(findViewById(R.id.map), "Couldn't upload the information, but you are still the best", Snackbar.LENGTH_LONG).show();
 
@@ -131,17 +141,54 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 
+    private Location getLastLocation() {
+        return LocationServices.FusedLocationApi.getLastLocation(
+                mGoogleApiClient);
+    }
+
     @Override
     public void onConnected(@Nullable Bundle bundle) {
-        mLastLocation = LocationServices.FusedLocationApi.getLastLocation(
-                mGoogleApiClient);
+        mLastLocation = getLastLocation();
         if (mLastLocation != null) {
             LatLng newPosition = new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude());
             mMap.clear();
             mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(newPosition, 30.0f));
         }
+        uploadHeatMap();
     }
 
+    public void uploadHeatMap() {
+        if (mRadioButton.isChecked()) {
+            mLastLocation = getLastLocation();
+            GeoQuery geoQuery = geoFire.queryAtLocation(new GeoLocation(mLastLocation.getLatitude(),
+                    mLastLocation.getLongitude()), RADIUS_SEARCH_QUERY);
+            geoQuery.addGeoQueryEventListener(new GeoQueryEventListener() {
+                @Override
+                public void onKeyEntered(String key, GeoLocation location) {
+                    
+                }
+
+                @Override
+                public void onKeyExited(String key) {
+                }
+
+                @Override
+                public void onKeyMoved(String key, GeoLocation location) {
+                    System.out.println(String.format("Key %s moved within the search area to [%f,%f]", key, location.latitude, location.longitude));
+                }
+
+                @Override
+                public void onGeoQueryReady() {
+                    System.out.println("All initial data has been loaded and events have been fired!");
+                }
+
+                @Override
+                public void onGeoQueryError(DatabaseError error) {
+                    System.err.println("There was an error with this query: " + error);
+                }
+            });
+        }
+    }
 
     @Override
     public void onConnectionSuspended(int i) {
