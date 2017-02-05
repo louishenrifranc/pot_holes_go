@@ -43,6 +43,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:background="@color/colorPrimary"
+        android:checked="true"
         android:gravity="center"
         android:text="ACTIVATE HEATMAP "
         android:textColor="@android:color/white"

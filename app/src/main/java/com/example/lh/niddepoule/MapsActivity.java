@@ -37,11 +37,16 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.TileOverlayOptions;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.maps.android.heatmaps.HeatmapTileProvider;
 
 import java.io.Console;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
     private static final double RADIUS_SEARCH_QUERY = 1.2;
@@ -53,8 +58,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private Button mReportButton;
     private RadioButton mRadioButton;
 
+    private List<LatLng> mHeatMapPoints;
     private DatabaseReference ref;
+
+    private LatLng currentPosition;
+
     private GeoFire geoFire;
+    private GeoQuery geoQuery;
+
     Location mLastLocation;
 
     @Override
@@ -74,6 +85,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mReportButton = (Button) findViewById(R.id.button);
         mRadioButton = (RadioButton) findViewById(R.id.radioButton);
 
+        mHeatMapPoints = new ArrayList<>();
+
+
         if (mGoogleApiClient == null) {
             mGoogleApiClient = new GoogleApiClient.Builder(this)
                     .addConnectionCallbacks(this)
@@ -82,12 +96,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     .build();
         }
 
+
         mReportButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                LatLng currentPosition = mMap.getCameraPosition().target;
-                String key = Long.toString((long) currentPosition.latitude) + "," + Long.toString((long) currentPosition.longitude);
+                Log.d("POSITION", currentPosition.toString());
+                String key = Double.toString((double) currentPosition.latitude) + "," + Double.toString((double) currentPosition.longitude);
+                key = key.replaceAll("\\.", "_");
                 geoFire.setLocation(key, new GeoLocation(currentPosition.latitude, currentPosition.longitude), new GeoFire.CompletionListener() {
 
                     @Override
@@ -122,23 +137,56 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         super.onStop();
     }
 
-    /**
-     * Manipulates the map once available.
-     * This callback is triggered when the map is ready to be used.
-     * This is where we can add markers or lines, add listeners or move the camera. In this case,
-     * we just add a marker near Sydney, Australia.
-     * If Google Play services is not installed on the device, the user will be prompted to install
-     * it inside the SupportMapFragment. This method will only be triggered once the user has
-     * installed Google Play services and returned to the app.
-     */
+    public static double distance(LatLng l1, LatLng l2) {
+        double lat1 = l1.latitude;
+        double lat2 = l2.latitude;
+        double lon1 = l1.longitude;
+        double lon2 = l2.longitude;
+        double el1 = 0;
+        double el2 = 0;
+        final int R = 6371; // Radius of the earth
+
+        Double latDistance = Math.toRadians(lat2 - lat1);
+        Double lonDistance = Math.toRadians(lon2 - lon1);
+        Double a = Math.sin(latDistance / 2) * Math.sin(latDistance / 2)
+                + Math.cos(Math.toRadians(lat1)) * Math.cos(Math.toRadians(lat2))
+                * Math.sin(lonDistance / 2) * Math.sin(lonDistance / 2);
+        Double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        double distance = R * c * 1000; // convert to meters
+        double height = el1 - el2;
+        distance = Math.pow(distance, 2) + Math.pow(height, 2);
+        return Math.sqrt(distance);
+    }
+
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-
-        // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        mMap.setOnCameraMoveCanceledListener(new GoogleMap.OnCameraMoveCanceledListener() {
+            @Override
+            public void onCameraMoveCanceled() {
+                Log.d("MOVE", "HAS CANCELLED");
+            }
+        });
+        mMap.setOnCameraMoveListener(new GoogleMap.OnCameraMoveListener() {
+            @Override
+            public void onCameraMove() {
+                currentPosition = mMap.getCameraPosition().target;
+                Log.d("MOVE",
+                        Double.toString(distance(currentPosition, new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude()))));
+            }
+        });
+        mMap.setOnCameraIdleListener(new GoogleMap.OnCameraIdleListener() {
+            @Override
+            public void onCameraIdle() {
+                Log.d("IDLE", "HAS IDLE");
+            }
+        });
+        mMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
+            @Override
+            public void onMapClick(LatLng latLng) {
+                Log.d("CLICK", "HAS CLICKED");
+            }
+        });
     }
 
     private Location getLastLocation() {
@@ -152,7 +200,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         if (mLastLocation != null) {
             LatLng newPosition = new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude());
             mMap.clear();
-            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(newPosition, 30.0f));
+            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(newPosition, 20.0f));
         }
         uploadHeatMap();
     }
@@ -160,25 +208,36 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void uploadHeatMap() {
         if (mRadioButton.isChecked()) {
             mLastLocation = getLastLocation();
-            GeoQuery geoQuery = geoFire.queryAtLocation(new GeoLocation(mLastLocation.getLatitude(),
+            geoQuery = geoFire.queryAtLocation(new GeoLocation(mLastLocation.getLatitude(),
                     mLastLocation.getLongitude()), RADIUS_SEARCH_QUERY);
             geoQuery.addGeoQueryEventListener(new GeoQueryEventListener() {
                 @Override
                 public void onKeyEntered(String key, GeoLocation location) {
-                    
+                    key = key.replaceAll("_", "\\.");
+                    Log.d("RETRIEVE", key);
+                    List<String> list = new ArrayList<String>(Arrays.asList(key.split("\\s*,\\s*")));
+                    try {
+                        Double latitude = Double.parseDouble(list.get(0));
+                        Double longitude = Double.parseDouble(list.get(1));
+                        mHeatMapPoints.add(new LatLng(latitude, longitude));
+                    } catch (Exception e) {
+                        // for beta
+                    }
                 }
 
                 @Override
                 public void onKeyExited(String key) {
+
                 }
 
                 @Override
                 public void onKeyMoved(String key, GeoLocation location) {
-                    System.out.println(String.format("Key %s moved within the search area to [%f,%f]", key, location.latitude, location.longitude));
                 }
 
                 @Override
                 public void onGeoQueryReady() {
+                    buildHeatMap();
+                    geoQuery.removeAllListeners();
                     System.out.println("All initial data has been loaded and events have been fired!");
                 }
 
@@ -188,6 +247,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 }
             });
         }
+    }
+
+    public void buildHeatMap() {
+        HeatmapTileProvider mProvider = new HeatmapTileProvider.Builder()
+                .data(mHeatMapPoints)
+                .build();
+        mMap.addTileOverlay(new TileOverlayOptions().tileProvider(mProvider));
     }
 
     @Override
