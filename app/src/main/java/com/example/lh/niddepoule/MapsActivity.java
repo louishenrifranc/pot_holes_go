@@ -50,7 +50,7 @@ import java.util.List;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
     private static final double RADIUS_SEARCH_QUERY = 1.2;
-
+    private static final int RADIUS_BF_REQUEST = 200;
     private GoogleMap mMap;
     private GoogleApiClient mGoogleApiClient;
     private GoogleMapOptions mGoogleMapOptions;
@@ -171,8 +171,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             @Override
             public void onCameraMove() {
                 currentPosition = mMap.getCameraPosition().target;
-                Log.d("MOVE",
-                        Double.toString(distance(currentPosition, new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude()))));
+
+                if (distance(currentPosition, new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude())) >
+                        RADIUS_BF_REQUEST) {
+                    uploadHeatMap();
+                }
             }
         });
         mMap.setOnCameraIdleListener(new GoogleMap.OnCameraIdleListener() {
