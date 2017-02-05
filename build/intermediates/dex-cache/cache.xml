@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ce5313bb5ccc0c1e10c995e4efb2f2b08c848b39">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-9.6.0_f701eec96aea666c0e56d02a30ffc934f444d35c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="938ba83fbb26987368049237e47718d56e91e222">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-9.6.0_0e829f8a5ecaa4862d3dbbc7edf1476af14884cf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a917154cf730ea6ec2495705309e6a4065cde2ac">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-9.6.0_89fcb71b43c0da0ebbfadc24f0ab60bd43355fb5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9f5c557145ddef094005eb73d72a7eaf330a0cf1">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-9.6.0_e1207fe0ae2a37c585a30eb87cda6b671685ffdf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.android.support/transition/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.1.0_5be93900b7d3900a17012d5617d58ef6b202dee4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d39f676be8400123523882d189a1d84040d34339">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.6.0_c0ec3d625454798d602a072fcbbb1fdb84c4ef3d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea5537e2a88ce0497d3e2272b1cf93f2e0c77b0d">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-9.6.0_1590e4ef255de5473a79f7720e8d3cd87786f371/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="eb96a230c7b55d545fbdee45157a5a75b2b26284">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-9.6.0_7295fbf81cdf43df643cbd7dfb249f53180851cb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1bf2ceb0034efe20249a561096f6e288cce7a0a4">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-9.6.0_52b8e3f114a9a88f6776a0430956bee21c09a1dd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.1.0_053f1c785abfcfe9625ff79dc2fa99d3127ab655/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.0_0cf588774d8685ab34e1327afb73f55c6b10fbd6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a9f41e6463de88c3f979d796382fc24fb7e9cd41">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.6.0_d8ee660158bead29e6a9c4b4f1caf5e7a835bd1d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6079f942bb34faee179b4c46396a26fbbfc43e5d">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-9.6.0_e33fd866743802f9ad65f8f5503ac13455ee57c9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="de2c50f4a24277d22d675d598640da6d4622b14d">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-9.6.0_40a5d3685667a03f54a85cc4e6e2bd61dc5d727e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4ab00b7d310cfdfff3a9446554485647153d0792">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-9.6.0_e3592dd89423b8bd3f4a6bc01181438bb65e2b7c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-applinks-1.4.0_f9673b81c4457e2768863d8f61556b0b4e6ae001/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="74d1712880eb2b4ab37ddf3c6a3232c883756726">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.6.0_60eaa8f83190562e962c236d7343f44e5e1442eb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ba2f029ff37297295d2d197ac6e957b361bfccaf">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.6.0_8cd6b38e61b46195e64a0266854586b1bd5634fd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="97e3259dcdaa9b33014a849f6d3bdbb4ef478383">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-crash-9.6.0_411a55b89f8fb6255643e3b00d25f971854074d5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.0_431bddd6edbec274d793794e2e2f49676d778394/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="43ab9b69758a0f22706629223c367e9bd478e1a8">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-9.6.0_d13358b3cd563ee7193e8c8850331da0e871d88d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f861fce2e9fa167e7fe8d8558cf2cbb910b9fb34">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-module-9.6.0_1aad8d2ae328e8d8d331482dd38e67f51d8c7619/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6d16df2955bbd154b36819386cfd2e3b7f7cae5b">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-9.6.0_51172d1f237103098c795caad530fcb5d0137928/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7a343e17f154f513a09c12946fae0f172be079ec">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-common-9.6.0_7a2f0c335f1c7042693d17032e02ef4ba7b9a83d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="12e94600a0ea3beae6ea0f1d18a0768ded5bc1ae">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-9.6.0_49f141a5b85bec5382630e742a7ff91c96ce11a0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.firebaseui/firebase-ui-auth/0.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8ac09931704b91e7b4d281f5e34b3b006b628c22">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.firebaseui-firebase-ui-auth-0.6.0_506e2eb3fb1117c8b605c5446b6ca4a6aeace31e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d57767271a9c140da143ec0db9a0673b6d96eccb">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-9.6.0_e5ad2eae84c0b14fa6fea4afc307299a577b3ee2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.github.barteksc/pdfium-android/1.5.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="97a90b867543905c0717d04f6a60532c9405aa33">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.barteksc-pdfium-android-1.5.0_f49a2c3f967200babc7823ca3a68d2bb1946905f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="266e4ac186afacc3b220a0cf8382348283b42407">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-9.6.0_fab238088a0b7e06cb2c5aa1f52731029ce09d88/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.0_a7567e1179251dd35cb3923bb1d900b93cc15815/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1f4bb2577a30d0b3268fed038ed59230709ad593">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.6.0_879c979999d5ca060793e7b0a5be8857d6a51d4d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="415336382149f2a79eb80599e340e188f6724d6d">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-9.6.0_67eb39db896a2363a6355980d18146603409e708/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.0_d40a1a14a5a52700b73581f65431535c0794941a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.android.support.constraint/constraint-layout/1.0.0-beta4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="662d7533b25a666c649c10a16b42edfb95f25a4f">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support.constraint-constraint-layout-1.0.0-beta4_74938f23779200d7d2a9858b7f302918067022e2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c48db997d87eb3e3ad47713cfbfe7cb878a2e66c">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-9.6.0_f47b81d7e3f7a7326197b71eb64cb299335a91b1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.android.support/palette-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-palette-v7-24.0.0_f712e63cc31e41df1ac31e1ebeaa215ee2f5ae48/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf803332f826adea247cc452d0bb04d7943f0007">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-9.6.0_8482d3400d8d2784bd5f95d251619c182f688706/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_9837c624842491054ad68b31deae574f3a14f698/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a723c85825d9591baec200523c10662e30c8bed7">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.6.0_cb4be037ccfab659b2128c2035a128a61a7330ee/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d1e7862a5a7675940acb6efcab34b38de89c9e18">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-impl-9.6.0_bbc5ae9d5e645f8496b107cc4b18528f18647433/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a93aa431de60b775c91158433f3c687f1d32cb9c">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.6.0_ec267099b0345c2d6c8716488a1974ccca960927/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.14.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="42a3ae86dd3ae2876d3e95c2e6e104ae57a50a65">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.android-facebook-android-sdk-4.14.1_ad18c5bac8794a58acb4c874485ce30312a16133/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.android.support/customtabs/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2d1eaa9e0b98f8fc4c2b989d9b30d4f1480648ac">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-customtabs-23.4.0_188db74ee86122a812b71fbe38d8c61138bc1429/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="73699fb64ea3de4a43d0f5c37dc525a5e1341ca1">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-9.6.0_e8b5082e3cd1f8daec0a6b16c633b2044bd8211d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-23.4.0_3dd82303f0bb9932755e2d222caac901708e601a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93a0248fe0524b4fa2d16f5f7c3cff8452796454">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.6.0_c0b9d51262dd842828b13547c31142c75d046368/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.0_2f661e24ac65a81c9b3c92c7a3f343460c5ea88c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_154e3e089c5784f6832c2084570e261c257a1a6a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5e651c1430cc9b8a3b3b5a9d92bb173214dfdf42">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-9.6.0_aff2ee8a2dd3006c25a7fb259ae6d15346f60606/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0ef21408e3142ffbfbd4a7ec1762c3325c6c386c">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.6.0_867375b7247314eaed6d74558e702ca7756c78f4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4cfc5a74aa9453cbec685cdbcb3e3f3539b483bd">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-9.6.0_e2aae06db2accd904a785b2bfaa9951da7f1df9b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_877b95625b665832d40637fbb2e3af4dfecdb1e0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.0_7d39c5e3680292361f0cea22970951793600c09c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="614b2ffd04818e865e1c02cc149c6b92e518e862">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.6.0_2d02476ec963ea06bacb4d541977da51c4362c86/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fedcde5f635d7b94a1cb0619196e141edcd1df60">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ed5a1c403668c4cfa393f8644d4231b37e246e93/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="580fa73d5bf63ffd04b9d66d0e75a2ed21842702">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-9.6.0_87975271a8c7472d1072cd0c2137809155f3dc99/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_b77f7f5ddbfcc7b7c43ee30289d9fd921c1fa4bf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3270d392adef5decc7bace1a3c2e749bec7bf19e">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-9.6.0_f974f9795bdc76adcd5c3fa4cd2d338cc2687938/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-24.0.0_87af90b4360df4ed8f5adfe09a893f7af6368ced/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-beta4/constraint-layout-solver-1.0.0-beta4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a9cb567dc008f570c28531720168f19148da965">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.0-beta4_afa08e6898c421bad7337f1df72881b40cfd9e74/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="53f7fbab5e6f4149eb5a1cdeabaeeeee11a84ebe">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-9.6.0_8410e07c1dbb1d596e8747609ad2ccaf5c99f457/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5243af50631020511cf2403789678149b1a319e6">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-9.6.0_90e270580f84f771d55b197b03020777a9dbff49/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f6afcfbf1989631424f9ceaae6ee24777d3cf6ba">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.6.0_daf8b9adce9d0dfee23fa5ac589e90d761c81799/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f2c9c986087e5862518757d0c988c8eac1a47bfd">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-framework-9.6.0_606c089a32c6faef969453587b39f97ea7d1c3ab/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bd11b3899f275668a9355f19cea2c2320f5f9d14">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.6.0_48de82ff6f7e63d302c941ce620264f0bd2ae409/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.0_d8301532f9a202e9fc67cd714ba0a89848bd3d00/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.1.0_bc78b960f2e853430ec0861767c6e543b96549c8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5fef4ad8c5b2519596b80a241d56b69dffcd6845">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-instantapps-9.6.0_221d312fc2205e848905e04da80fdc202606fa0f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a5da6fc5a6f39aee309ae6ae670e1b942759dc51">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-9.6.0_aeb8ee997c4eedca7fc54bbb4eb2091f229b91c2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.github.barteksc/android-pdf-viewer/2.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="39e27f0debb3627fcb0b7dbcaf93aad17d81ffcd">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.barteksc-android-pdf-viewer-2.4.0_0e587172a5c288ae9895af67a9738bc69d2f3472/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f4540ad2a6e3741694e9332f0c20607c780fae6c">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-9.6.0_a54a70d65fb3046b7da509c5b10a499aae136d8c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7357a05eea2a049c33488c7e8c6f887b3483d4b8">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-9.6.0_9c8b9fac4bc86bd8360708e28b7968b480c8d8f5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="db0a4170961a16af6d7a5222bf90a5876eea4227">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.6.0_7cb437738fbfe4848bcaf7c99361ed6f7af5ac27/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0f8647d80dceabd62d87ec1edf94419e36f055e4">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_69afc3463c3e6c809a505deae15e9965a1e5719f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="300e72616fdf265bb36bff7adb1ebec7b1d72817">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-9.6.0_51cb7eea6a5a97738e1215e1f14b3a45c8456983/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.0_941a1cad033066cfcb53621d3a44cf7686ac5a5d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lh/firebase_project/NidDePoule/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="26cd46f7bc6e1f269062b61269317a29329a9a7b">
+        <dex dex="/home/lh/firebase_project/NidDePoule/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-awareness-9.6.0_b00bba590f9021f6739c79c01daa6ba64777c3a1/classes.dex" />
+    </item>
+
+</items>

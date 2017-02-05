@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "586047604935",
+    "firebase_url": "https://niddepoule-f1f37.firebaseio.com",
+    "project_id": "niddepoule-f1f37",
+    "storage_bucket": "niddepoule-f1f37.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586047604935:android:3f0b70d53fa8dee0",
+        "android_client_info": {
+          "package_name": "com.example.lh.niddepoule"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586047604935-djt7qsfm4s3j8tevet10sefqi6er9t35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwMOhAgTN5PEV6ff6KuBeNnOBm5R2W4_I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586047604935-djt7qsfm4s3j8tevet10sefqi6er9t35.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
